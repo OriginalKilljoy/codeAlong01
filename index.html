@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlong</title>
+</head>
+<body>
+    <div id="wordBox"></div>
+
+    <button onclick="showWord(this)">Hei</button>
+    <button onclick="showWord(this)">På</button>
+    <button onclick="showWord(this)">Deg</button>
+    <button onclick="showWord(this)">Karl</button>
+    <button onclick="resetSentence()">Reset</button>
+
+    <script>
+        let chosenWord = '';
+        function showWord(myWord){
+            chosenWord += myWord.innerHTML + ' ';
+            document.getElementById('wordBox').innerHTML = chosenWord;
+
+        }
+
+        function resetSentence(){
+            document.getElementById('wordBox').innerHTML = '';
+            chosenWord = '';
+        }
+
+
+//myWord+''
+
+    </script>
+</body>
+</html>
